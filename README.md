@@ -2,7 +2,6 @@
 
 Large time-series models, pre-training datasets, and adaptation techniques (Future Features).
 
-
 ## Model Checklist
 
 - [x] **Moirai** - Unified Training of Universal Time Series Forecasting Transformers. [[ICML 2024]](https://arxiv.org/abs/2402.02592), [[Code]](https://github.com/SalesforceAIResearch/uni2ts)
@@ -61,33 +60,13 @@ bash ./scripts/adaptation/few_shot/timer_xl_etth1.sh
 4. Or evaluate the zero-shot performance of large time-series models. Here we list some resources:
 - Chronos: https://huggingface.co/amazon/chronos-t5-base
 - Moirai: https://huggingface.co/Salesforce/moirai-1.0-R-base
-- TimesFM: https://huggingface.co/google/timesfm-1.0-200m
 - Timer-XL: https://huggingface.co/thuml/timer-base-84m
-- Time-MoE: https://huggingface.co/Maple728/TimeMoE-50M
 
 > [!NOTE]
-> LTMs are still small in scale compared to large models of other modalities. We prefer to include and implement models requiring affordable training resources as efficiently as possible (for example, using several RTX 4090s or A100s).
-
-## Citation
-
-If you find this repo helpful, please cite our paper. 
-
-```
-@inproceedings{liutimer,
-  title={Timer: Generative Pre-trained Transformers Are Large Time Series Models},
-  author={Liu, Yong and Zhang, Haoran and Li, Chenyu and Huang, Xiangdong and Wang, Jianmin and Long, Mingsheng},
-  booktitle={Forty-first International Conference on Machine Learning}
-}
-```
+> LTMs are still small in scale compared to large models of other modalities. We prefer to include and implement models requiring affordable training resources as efficiently as possible (for example, using several NVIDIA RTX 3090s or A100s).
 
 ## Acknowledgment
 
 We appreciate the following GitHub repos a lot for their valuable code and efforts:
 - Time-Series-Library (https://github.com/thuml/Time-Series-Library)
 - Large-Time-Series-Model (https://github.com/thuml/Large-Time-Series-Model)
-
-## Contributors
-
-If you have any questions or want to use the code, feel free to contact:
-* Sanjay Chakraborty (Sanjay.chakraborty@liu.se)
-* Ibrahim Delibasoglu (ibrahim.delibasoglu@liu.se)
