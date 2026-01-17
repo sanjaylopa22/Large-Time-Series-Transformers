@@ -26,7 +26,7 @@ pip install -r requirements.txt
 ).
   * [ERA5-Familiy](https://www.ecmwf.int/en/forecasts/dataset/ecmwf-reanalysis-v5) (40-year span, thousands of variables) for domain-specific model: [[Download]](https://cloud.tsinghua.edu.cn/f/7fe0b95032c64d39bc4a/).
 
-- For superwised training or modeling adaptation
+- For supervised training or modeling adaptation
   * Datasets from [TSLib](https://github.com/thuml/Time-Series-Library) : [[Download]](https://cloud.tsinghua.edu.cn/f/4d83223ad71047e28aec/).
 
 2. We provide pre-training and adaptation scripts under the folder `./scripts/`. You can conduct experiments using the following examples:
@@ -63,7 +63,7 @@ bash ./scripts/adaptation/few_shot/timer_xl_etth1.sh
 - Timer-XL: https://huggingface.co/thuml/timer-base-84m
 
 > [!NOTE]
-> LTMs are still small in scale compared to large models of other modalities. We prefer to include and implement models requiring affordable training resources as efficiently as possible (for example, using several NVIDIA RTX 3090s or A100s).
+> LTMs are still small in scale compared to large models of other modalities. We prefer to include and implement models requiring affordable training resources as efficiently as possible (for example, using several NVIDIA RTX 3090s or supercomputer).
 
 ## Acknowledgment
 
